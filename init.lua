@@ -1,4 +1,5 @@
 -- plugins
+
 require ('plugins.vim_plug')
 -- require ('plugins.packer')
 
@@ -6,6 +7,7 @@ require ('plugins.vim_plug')
 require ('config.autosave')
 require ('config.mappings')
 require ('config.settings')
+
 -- require ('config.comment')
 
 -- lsp
@@ -15,7 +17,6 @@ require ('lsp.lsp_config')
 
 -- plugins config
 require ('plugins.alpha')
-require ('plugins.vim_multi')
 require ('plugins.buffer')
 require ('plugins.colorizer')
 require ('plugins.comment')

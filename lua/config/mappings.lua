@@ -3,15 +3,26 @@ local function map(m, k, v, i)
     vim.keymap.set(m, k, v, i, { silent = true })
 end
 
+-- ir para o comeco e final da linha
+map('i', '<C-b>', '<ESC>^i') -- Inicio da linha
+map('i', '<C-e>', '<End>') -- Final da linha
+
+-- navegar no modo insert
+map('i', '<C-h>', '<Left>')
+map('i', '<C-j>', '<Down>')
+map('i', '<C-k>', '<Up>')
+map('i', '<C-l>', '<Right>')
+
+
 -- forçar saída
 map('n', '<C-Q>', '<ESC><CMD>q!<CR>')						-- força saída no mode normal
 map('v', '<C-Q>', '<ESC><CMD>q!<CR>')						-- força saída no mode visual	
 map('i', '<C-Q>', '<ESC><CMD>q!<CR>')						-- força saída no mode inserir
 
 -- salvar alterações
-map('n', '<C-s>', "<CMD>w<CR><CMD>echo 'Save '<CR>") 	-- salva alerações no modo normal
+map('n', '<C-s>', "<CMD>Save<CR> <CMD> :w <CR>") 	-- salva alerações no modo normal
 
-map('n', '<A-s>', "<CMD>NvimTreeClose<CR> <CMD>mksession! .Session.vim<CR><CMD>echo 'Saved Session '<CR>") -- salva a sessao atual
+-- map('n', '<A-s>', "<CMD>NvimTreeClose<CR> <CMD>mksession! .Session.vim<CR><CMD>echo 'Saved Session '<CR>") -- salva a sessao atual
 map('n', '<leader>ss', "<CMD>NvimTreeClose<CR> <CMD> :source .Session.vim<CR><CMD>echo 'Loaded Session '<CR>") -- abre a ultima sessao salva.
 
 -- mover linhas
@@ -88,7 +99,6 @@ nnoremap <silent><C-A-PageDown> :BufferLineMovePrev<CR>
 
 -- telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
@@ -115,3 +125,4 @@ map('n', '<leader>rr', "<CMD>TermExec size=10 direction=float cmd='ranger && exi
 -- map('n', '<leader>uu', "<CMD>TermExec size=10 direction=float cmd='sh ~/.config/nvim/script/update.sh && exit'<CR>") 	-- SUNvim update
 map('n', '<leader>th', "<CMD>TermExec size=10 direction=float cmd='sh ~/.config/nvim/lua/theme/theme.sh && exit'<CR>") 	-- SUNvim theme
 map('n', '<leader>uf', "<CMD>TermExec size=10 direction=float cmd='sh ~/.config/nvim/script/fix_list.sh'<CR>") 	 		-- SUNvim fix_list
+
