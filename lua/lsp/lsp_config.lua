@@ -1,5 +1,5 @@
 local nvim_lsp = require('lspconfig')
-local servers = {'ccls','clangd', 'pyright', 'tsserver', 'html', 'gopls', 'jsonls', 'sumneko_lua', 'vimls', 'cssls'}
+local servers = {'ccls','clangd', 'pyright', 'tsserver', 'html', 'gopls', 'jsonls', 'sumneko_lua', 'vimls', 'cssls', 'rust_analyzer'}
 
 vim.diagnostic.config({
   signs = true,

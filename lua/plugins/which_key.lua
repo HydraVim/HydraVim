@@ -105,6 +105,11 @@ local mappings = {
     s = { ":LspStart<cr>", " LSP Start" }
   },
   z = { ":ZenMode<cr>", " Zen Mode" },
+  u = {
+		name = "FPS",
+		a = {"<CMD>let g:neovide_profiler = v:true<cr>", "Show FPS"},
+		b = {"<CMD>let g:neovide_profiler = v:false<cr>", "Hide FPS"}
+	},
   p = {
     name = "ﮣ Plugins",
     r = { ":PlugClean<cr>", "ﮁ Remove Unused Plugins" },
