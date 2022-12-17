@@ -22,7 +22,7 @@ map('i', '<C-Q>', '<ESC><CMD>q!<CR>')						-- força saída no mode inserir
 -- salvar alterações
 map('n', '<C-s>', "<CMD>Save<CR> <CMD> :w <CR>") 	-- salva alerações no modo normal
 
--- map('n', '<A-s>', "<CMD>NvimTreeClose<CR> <CMD>mksession! .Session.vim<CR><CMD>echo 'Saved Session '<CR>") -- salva a sessao atual
+map('n', '<A-s>', "<CMD>NvimTreeClose<CR> <CMD>mksession! .Session.vim<CR><CMD>echo 'Saved Session '<CR>") -- salva a sessao atual
 map('n', '<leader>ss', "<CMD>NvimTreeClose<CR> <CMD> :source .Session.vim<CR><CMD>echo 'Loaded Session '<CR>") -- abre a ultima sessao salva.
 
 -- mover linhas

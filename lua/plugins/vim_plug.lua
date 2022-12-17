@@ -35,6 +35,9 @@ call plug#begin('~/.vim/vim.plug')
 	Plug 'rcarriga/nvim-notify'
 	Plug 'wakatime/vim-wakatime'
 	Plug 'rust-lang/rust.vim'
+	Plug 'andweeb/presence.nvim'
+	Plug 'chentoast/marks.nvim'
+
 	" temas --
 	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 	Plug 'projekt0n/github-nvim-theme'

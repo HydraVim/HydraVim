@@ -27,6 +27,7 @@ require ('plugins.nvim_tree')
 require ('plugins.telescope')
 require ('plugins.toggleterm')
 require ('plugins.which_key')
+require ('plugins.marks')
 
 -- temas
 require ('theme.theme')
