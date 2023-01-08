@@ -7,6 +7,8 @@ local cmd = vim.cmd
 -- key
 g.mapleader = ' '
 g.maplocalleader = ' '
+g.neovide_scale_factor = 0.7
+g.neovide_hide_mouse_when_typing = true
 
 -- definições básicas
 opt.mouse = 'a'	-- ativa mouse
@@ -27,3 +29,4 @@ cmd [[ set fillchars=eob:\ ,fold:\ ,vert:\│ ]]	-- desativa o ~
 cmd [[ set noshowmode ]]	-- oculta o modo na barra inferior
 cmd [[ set clipboard+=unnamedplus ]]	-- suporte à área de tranferência
 cmd [[ au InsertEnter * :setlocal nohlsearch | au InsertLeave * :setlocal hlsearch ]]	-- desativa/ativa cor da pesquisa
+
