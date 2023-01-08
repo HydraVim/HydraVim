@@ -172,33 +172,6 @@ $ nvim -c 'CocInstall coc-python'
 
 <br />
  
- ### 💎 Ruby
-<details>
-  <summary><b>Install Guide</b></summary>
-  
-- Install <a href="https://www.ruby-lang.org/" target="_blank"> Ruby </a>
-  
-``` shell
-$ sudo apt install ruby
-```
-
-- Install <a href="https://solargraph.org/" target="_blank"> Solargraph - lsp</a>
-  
-``` shell
-$ gem install solargraph
-```
-
-- Run the command below to install <a href="https://github.com/neoclide/coc.nvim/wiki/Language-servers#supported-features" target="_blank"> solargraph in COC.</a>
-  
-``` shell
-$ nvim -c 'CocInstall coc-solargraph'
-```
-</details
-
-<br />
-
-<br />
- 
 ### 🦀 Rust
 <details>
   <summary><b>Install Guide</b></summary>
