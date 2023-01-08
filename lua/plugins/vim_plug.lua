@@ -32,6 +32,7 @@ call plug#begin('~/.vim/vim.plug')
 	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'folke/which-key.nvim'
 	Plug 'folke/zen-mode.nvim'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 	" temas --
 	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 	Plug 'projekt0n/github-nvim-theme'
