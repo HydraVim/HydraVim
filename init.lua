@@ -9,7 +9,8 @@ require ('config.settings')
 -- require ('config.comment')
 
 -- lsp
-require ('lsp.coc')
+-- require ('lsp.coc')
+require ('lsp.cmp')
 require ('lsp.treesitter')
 require ('lsp.lsp_config')
 
@@ -26,6 +27,7 @@ require ('plugins.nvim_tree')
 require ('plugins.telescope')
 require ('plugins.toggleterm')
 require ('plugins.which_key')
+require ('plugins.autopairs')
 
 -- temas
 require ('theme.theme')

@@ -16,7 +16,7 @@ call plug#begin('~/.vim/vim.plug')
 	Plug 'nvim-tree/nvim-tree.lua'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'nvim-lualine/lualine.nvim'
-	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+"   Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 	Plug 'lewis6991/gitsigns.nvim'
 	Plug 'sheerun/vim-polyglot'
 	Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
@@ -43,6 +43,32 @@ call plug#begin('~/.vim/vim.plug')
 	Plug 'rafamadriz/neon'
 	Plug 'shaunsingh/nord.nvim'
     Plug 'rmehri01/onenord.nvim'
+
+	" CMP
+
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'hrsh7th/cmp-nvim-lsp'
+	Plug 'hrsh7th/cmp-buffer'
+	Plug 'hrsh7th/cmp-path'
+	Plug 'hrsh7th/cmp-cmdline'
+	Plug 'hrsh7th/nvim-cmp'
+	Plug 'windwp/nvim-autopairs'
+
+	" For vsnip users.
+	Plug 'hrsh7th/cmp-vsnip'
+	Plug 'hrsh7th/vim-vsnip'
+
+	" For luasnip users.
+	Plug 'L3MON4D3/LuaSnip'
+	Plug 'saadparwaiz1/cmp_luasnip'
+
+	" For ultisnips users.
+	Plug 'SirVer/ultisnips'
+	Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+
+	" For snippy users.
+	Plug 'dcampos/nvim-snippy'
+	Plug 'dcampos/cmp-snippy'
 
 call plug#end()
 ]])
